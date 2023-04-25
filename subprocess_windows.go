@@ -4,8 +4,8 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Subprocess go package used to Kills process and all child processes it spawned in
-// Linux or Windows.
+// Subprocess go package used to Kills process and all child processes it
+// spawned in Linux or Windows.
 package subprocess
 
 import (
