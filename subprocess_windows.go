@@ -31,7 +31,7 @@ func KillProcessTree(pid int) (err error) {
 
 	// Kill the child processes first
 	for _, childPid := range pids {
-		if err = killProcessTree(childPid); err != nil {
+		if err = KillProcessTree(childPid); err != nil {
 			return
 		}
 	}
