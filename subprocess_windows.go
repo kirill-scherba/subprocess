@@ -13,8 +13,8 @@ import (
 	"unsafe"
 )
 
-// Kill the process and all its children in Windows
-func killProcessTree(pid int) (err error) {
+// KillProcessTree Kills the process and all its children in Windows
+func KillProcessTree(pid int) (err error) {
 
 	// Open a handle to the process with PROCESS_TERMINATE access
 	handle, err := syscall.OpenProcess(syscall.PROCESS_TERMINATE, false, uint32(pid))

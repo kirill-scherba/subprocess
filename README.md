@@ -24,12 +24,12 @@ func main() {
     // var err error
     // cmd, err = exec.Run("executable_name", "parameter")
     // ...
-    // Use the killProcessTree function when you want stop execution started 
+    // Use the KillProcessTree function when you want stop execution started 
     // process and all its child process.
     //
 
     // Kill the process and all its children
-    err = subprocess.killProcessTree(cmd.Process.Pid)
+    err = subprocess.KillProcessTree(cmd.Process.Pid)
     if err != nil {
         return
     }

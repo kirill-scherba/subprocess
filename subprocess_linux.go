@@ -10,8 +10,8 @@ package subprocess
 
 import "syscall"
 
-// Kill the process and all its children in Linux
-func killProcessTree(pid int) (err error) {
+// KillProcessTree kills the process and all its children in Linux
+func KillProcessTree(pid int) (err error) {
 	pgid, err := syscall.Getpgid(pid)
 	if err != nil {
 		return
